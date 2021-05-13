@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <title>November First OTP</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <img class="logo" src="res/N1_Logo.svg" alt="n1logo">
+    </header>
+    <div class="container">
+        <div class="otp-screen">
+            <section>
+                <h3>Enter verification code</h3>
+                <p>Please enter the 6-digit verification code sent to <b>mark@skyholding.dk.</b> It might take up to 5 min. to receive the email.</p>
+                <p>Didn’t receive a code?<a class="send-again" href=""> Send again</a></p>
+                <form class="digit-group" onpaste="return false;" ondrop="return false;" autocomplete="off">
+                    <input type="text" id="digit-1" type="number" maxlength="1" onkeyup="onKeyUpEvent(1, event)" class="first" />
+                    <input type="text" id="digit-2" type="number" maxlength="1" onkeyup="onKeyUpEvent(2, event)" />
+                    <input type="text" id="digit-3" type="number" maxlength="1" onkeyup="onKeyUpEvent(3, event)" class="last" />
+                    <span class="splitter">&ndash;</span>
+                    <input type="text" id="digit-4" type="number" maxlength="1" onkeyup="onKeyUpEvent(4, event)" class="first" />
+                    <input type="text" id="digit-5" type="number" maxlength="1" onkeyup="onKeyUpEvent(5, event)" />
+                    <input type="text" id="digit-6" type="number" maxlength="1" onkeyup="onKeyUpEvent(6, event)" class="last" />
+                    <button class="btn" type="button" onclick="submitOtp()">Continue</button>
+                </form>
+                <p>Wrong email? Contact November First support</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+
+<!-- <div class="prompt">
+    Enter the code generated on your mobile device below to log in!
+</div>
+
+<form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+    <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+    <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+    <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+    <span class="splitter">&ndash;</span>
+    <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+    <input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
+    <input type="text" id="digit-6" name="digit-6" data-previous="digit-5" />
+</form> -->
